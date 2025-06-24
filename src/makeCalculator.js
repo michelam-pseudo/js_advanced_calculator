@@ -15,12 +15,18 @@ function makeCalculator() {
     },
     subtract: function (number) {
       this.result = this.result - number;
+
+      return this;
     },
     multiply: function (number) {
       this.result *= number;
+
+      return this;
     },
     divide: function (number) {
       this.result = this.result / number;
+
+      return this;
     },
     reset: function () {
       this.result = 0;
